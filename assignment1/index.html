@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GCS Form</title>
+    <link rel="stylesheet" href="index.css">
+    
+</head>
+<body>
+    <div class="main">
+        <form action="#" class="form" name="GCS" onsubmit="return validateForm()" onreset="resetForm()">
+            <div class="block">
+                <div class="left">
+                    <label for="select" class="heading">Select your source :</label>
+                </div>
+                <div class="right">
+                    <input type="text" id="select" name="select" value="Google Cloud Storage" disabled="disabled" class="input">
+                </div>
+            </div>
+            
+            <div class="block">
+                <div class="left">
+                    <label for="pipeline" class="heading">Provide a name for pipeline :</label>
+                </div>
+                <div class="right">
+                    <input type="text" id="pipeline" name="pipeline" class="input" placeholder="e.g., cust_shop_energy_gateway001" required oninput="resetcolor(this)">
+                </div>
+            </div>
+            
+            <div class="block">
+                <div class="left">
+                    <label for="project" class="heading">GCS project name :</label>
+                </div>
+                <div class="right">
+                    <input type="text" id="project" name="project" class="input" placeholder="project-id" required oninput="resetcolor(this)">
+                </div>
+            </div>
+            
+            <div class="block">
+                <div class="left">
+                    <label for="bucket" class="heading">GCS bucket name :</label>
+                </div>
+                <div class="right">
+                    <input type="text" id="bucket" name="bucket" class="input" placeholder="gs://your-bucket" required oninput="resetcolor(this)">
+                </div>
+            </div>
+            
+            <div class="block">
+                <div class="left">
+                    <label for="files" class="heading">Input Cloud Storage File(s) :</label>
+                </div>
+                <div class="right">
+                    <input type="text" id="files" name="files" class="input" placeholder="GCS location of your files" required oninput="resetcolor(this)">
+                    <p class="text">Example: <br> gs://your-bucket/your-files/01.csv</p>
+                </div>
+            </div>
+            
+            <div class="block">
+                <div class="left">
+                    <label for="credentials" class="heading">GCS credentials :</label>
+                </div>
+                <div class="right">
+                    <input type="password" id="credentials" name="credentials" class="input" required oninput="resetcolor(this)">
+                </div>
+            </div>
+            
+            <div class="block">
+                <div class="left">
+                    <label for="time" class="heading">Run every :</label>
+                </div>
+                <div class="right">
+                    <input type="text" id="time" name="time" class="input" placeholder="(in minutes)" required oninput="resetcolor(this)">
+                </div>
+            </div>
+
+            <div class="buttons">
+                <button type="submit" class="create">Create</button>
+                <button type="reset" class="cancel">Cancel</button>
+            </div>
+        </form>
+    </div>
+
+
+    <script src="index.js"></script>
+    
+</body>
+</html>

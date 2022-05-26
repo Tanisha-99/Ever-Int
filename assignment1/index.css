@@ -1,0 +1,138 @@
+*{
+    box-sizing: border-box;
+    /*overflow-y: hidden;*/
+    
+    
+}
+
+.main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.form{
+    /*border: solid black 0.1em;*/
+    border-radius: 2%;
+    padding-left: 2em;
+    padding-right: 2em;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    max-width: auto;
+    box-shadow: -1em 3em 5em 1em rgb(81, 80, 80);
+    height: auto;
+    line-height: auto;
+}
+
+.block{
+    margin-top: 1.5em;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.text{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1rem;
+}
+
+.left{
+    margin-right: 1em;
+}
+
+.input{
+    
+    border: none;
+    border-left: solid black 0.2em;
+    background-color: rgb(240, 236, 236);
+    height: 2.5em;
+    width: 20rem;
+    
+}
+
+.input[type="text"]:disabled{
+    background-color: white;
+}
+
+.text{
+    margin-top: -0.2em;
+    font-size: 1em;
+}
+
+.buttons{
+    margin-top: 2em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.create, .cancel{
+    background-color: rgb(65, 183, 226);
+    border: none;
+    height: 3em;
+    cursor: pointer;
+    
+    font-size: 1em;
+    border-radius: 5%;
+}
+
+.create:active{
+    transform: translateY(0.15em);
+}
+
+.cancel:active{
+    transform: translateY(0.15em);
+}
+
+.cancel:hover{
+    border: solid black 0.1em;
+    
+    transform: translate3d(50em);
+}
+
+.create:hover{
+    border: solid black 0.1em;
+    /*transform: translateZ(50em);*/
+    transform: translate3d(50em);
+}
+
+.create{
+    width: 10em;
+}
+
+.cancel{
+    width: 15em;
+    margin-left: 1em;
+}
+
+
+/*width less than 768px*/
+@media only screen and (max-width: 767px){
+
+    *{
+        overflow-x: hidden;
+    }
+
+    
+    .form{
+        margin: 2%;
+        box-shadow: 1px 1px 5px 5px rgb(81, 80, 80);
+        padding-left: 2em;
+        padding-right: 2em;
+        padding-top: 1em;
+        padding-bottom: 1em;
+    }
+
+    .block{
+        display: block;
+    }
+
+    .create{
+        width: 6em;
+    }
+
+    .cancel{
+        width: 8em;
+    }
+    
+}
