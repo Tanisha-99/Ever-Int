@@ -9,6 +9,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    height: 99vh;
     
 }
 
@@ -21,8 +22,7 @@
     padding-bottom: 1em;
     max-width: auto;
     box-shadow: -1em 3em 5em 1em rgb(81, 80, 80);
-    height: auto;
-    line-height: auto;
+    
 }
 
 .block{
