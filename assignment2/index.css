@@ -1,0 +1,22 @@
+*{
+    box-sizing: border-box;
+}
+
+.conatiner{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+
+.table{
+    border-collapse: collapse;
+}
+
+tr, td, th{
+
+    border: 1px solid #cccccc;
+    padding: 0.5em;
+    text-align: center;
+}
+
