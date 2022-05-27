@@ -1,5 +1,5 @@
 [
-    ["machine name", "machine id", 
+    ["Machine name", "Machine id", 
         ["Energy consumed (Kwh)", "Today", "MTD", "YTD"],
         "Active Power (MW)", "Apparent Power (MVA)", "Reactive Power (MVAr)", "Current (Amps)", "Voltage(Volts)", "Power Factor", 
         ["Idle Time", "Today", "MTD", "YTD"]
